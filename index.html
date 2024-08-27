@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Encriptador de Texto</h1>
+     <!-- Párrafo descriptivo debajo del título -->
+     <p class="description">Solo letras minusculas y sin acentos.</p>
+    
+    <textarea id="input-text" placeholder="Ingrese el texto aquí..." rows="4" cols="50"></textarea><br><br>
+
+    <!-- Contenedor de botones de encriptar y desencriptar -->
+    <div class="button-container">
+        <button onclick="encryptText()">Encriptar</button>
+        <button onclick="decryptText()">Desencriptar</button>
+    </div>
+    
+    <h3>Resultado:</h3>
+    <p id="result-text"></p>
+
+    <!-- Botón de copiar -->
+    <button onclick="copyToClipboard()" class="copy-button">Copiar</button>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://github.com/DanielStar96" target="_blank">
+            <img src="img/logotipo-de-github.png" alt="Logo" class="footer-logo">
+        </a>
+        <p>&copy; 2024 Desarrollado por Daniel Carrasco. Challenge de encriptador de texto alura latam.</p>
+    </footer>
+
+    <script src="encriptador.js"></script>
+</body>
+</html>

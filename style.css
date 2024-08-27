@@ -1,0 +1,152 @@
+/* Reseteo de algunos estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/hacker-3655668_1280.jpg'); /* Cambia el path a la ubicación de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la página */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura completa de la ventana */
+}
+
+/* Estilo del contenedor principal */
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* Color de texto para que contraste con el fondo */
+}
+/* Estilo para el párrafo descriptivo */
+.description {
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    font-size: 18px;
+    text-align: center;
+    color: #fff; /* Color de texto para que contraste con el fondo */
+    max-width: 600px;
+}
+
+/* Estilo para el área de texto */
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+/* Contenedor para los botones de encriptar y desencriptar */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.button-container button {
+    margin: 25px 20px; /* Espacio entre los botones */
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #17c500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el botón de copiar */
+.copy-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #17c500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #218838;
+}
+
+/* Estilo para el texto del resultado */
+#result-text {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    border: 1px solid #17c600;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 50px;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+/* Estilo para el pie de página */
+footer {
+    margin-top: auto; /* Empuja el pie de página hacia el fondo del contenedor */
+    padding: 10px;
+    background-color: rgba(52, 255, 25, 0.5); /* Fondo semitransparente para el footer */
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+footer a {
+    display: inline-block;
+    margin-bottom: 10px; /* Espacio entre el logo y el texto del pie de página */
+}
+
+.footer-logo {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    textarea, #result-text, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    textarea, #result-text, button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
